@@ -15,11 +15,11 @@ public class SaqueAnalise implements Estado {
 	}
 
 	public void enviarBanco() {
-		System.err.println("nao pode enviar");
+		System.out.println("nao pode enviar");
 	}
 
 	public void pagar() {
-		System.err.println("nao pode pagar");
+		System.out.println("nao pode pagar");
 	}
 
 	public void cancelar() {
@@ -28,16 +28,17 @@ public class SaqueAnalise implements Estado {
 	}
 
 	public void analisar() {
-		System.err.println("nao pode analisar");
+		System.out.println("nao pode analisar");
 	}
 
 	public void aprovarAnalise() {
 		maquinaSaque.estado = maquinaSaque.aprovado;
 		System.out.println("analise positiva");
+		maquinaSaque.estado.enviarBanco();
 	}
 
 	public void negarAnalise() {
-		maquinaSaque.estado = maquinaSaque.negado;
 		System.out.println("analise negativa");
+		this.cancelar();
 	}
 }

@@ -19,7 +19,6 @@ public class MaquinaSaque {
 	public final Estado pago;
 	public final Estado cancelado;
 	public final Estado aprovado;
-	public final Estado negado;
 
 	public MaquinaSaque(Saque saque) {
 		
@@ -31,7 +30,6 @@ public class MaquinaSaque {
 		this.cancelado = new SaqueCancelado(this);
 		this.enviado = new SaqueEnviadoBanco(this);
 		this.aprovado = new SaqueAprovado(this);
-		this.negado = new SaqueNegado(this);
 
 		this.estado = criado;
 	}

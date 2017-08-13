@@ -15,26 +15,27 @@ public class SaqueAprovado implements Estado {
 	}
 
 	public void enviarBanco() {
-		System.err.println("nao pode cancelar");
+		System.out.println("enviado");
+		maquinaSaque.estado = maquinaSaque.enviado;
 	}
 
 	public void pagar() {
-		System.err.println("nao pode cancelar");
+		System.out.println("nao pode pagar");
 	}
 
 	public void cancelar() {
-		System.err.println("nao pode cancelar");
+		System.out.println("nao pode cancelar");
 	}
 
 	public void analisar() {
-		System.err.println("nao pode analisar");
+		System.out.println("nao pode analisar");
 	}
 
 	public void aprovarAnalise() {
-		System.err.println("nao pode aprovar analise");
+		System.out.println("nao pode aprovar analise");
 	}
 
 	public void negarAnalise() {
-		System.err.println("nao pode negar analise");
+		System.out.println("nao pode negar analise");
 	}
 }

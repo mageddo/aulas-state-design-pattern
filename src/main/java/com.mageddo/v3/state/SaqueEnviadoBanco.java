@@ -15,7 +15,7 @@ public class SaqueEnviadoBanco implements Estado {
 	}
 
 	public void enviarBanco() {
-		System.err.println("nao pode enviar");
+		System.out.println("nao pode enviar");
 	}
 
 	public void pagar() {
@@ -24,18 +24,18 @@ public class SaqueEnviadoBanco implements Estado {
 	}
 
 	public void cancelar() {
-		System.err.println("nao pode ser cancelado");
+		System.out.println("nao pode ser cancelado");
 	}
 
 	public void analisar() {
-		System.err.println("nao pode analisar");
+		System.out.println("nao pode analisar");
 	}
 
 	public void aprovarAnalise() {
-		System.err.println("nao pode aprovar");
+		System.out.println("nao pode aprovar");
 	}
 
 	public void negarAnalise() {
-		System.err.println("nao pode negar");
+		System.out.println("nao pode negar");
 	}
 }

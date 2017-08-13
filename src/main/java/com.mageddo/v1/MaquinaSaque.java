@@ -13,7 +13,7 @@ void enviarBanco(Saque saque){
 			saque.status = "enviado-banco";
 			break;
 		default:
-			System.err.println("não posso enviar ao banco");
+			System.out.println("não posso enviar ao banco");
 	}
 }
 
@@ -24,7 +24,7 @@ void pagar(Saque saque){
 			saque.status = "pago";
 			break;
 		default:
-			System.err.println("não posso pagar");
+			System.out.println("não posso pagar");
 	}
 }
 
@@ -35,7 +35,7 @@ void cancelar(Saque saque){
 			saque.status = "cancelado";
 			break;
 		default:
-			System.err.println("não posso cancelar");
+			System.out.println("não posso cancelar");
 	}
 }
 
