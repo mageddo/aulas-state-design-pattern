@@ -8,7 +8,7 @@ public interface Estado {
 	void enviarBanco();
 	void pagar();
 	void cancelar();
-	void analisar();
-	void aprovarAnalise();
-	void negarAnalise();
+	void analisar(); // enviando para a analise de risco
+	void aprovarAnalise(); // analise de risco aprovou
+	void negarAnalise(); // analise de risco reprovou
 }

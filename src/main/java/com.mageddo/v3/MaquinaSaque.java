@@ -34,12 +34,15 @@ public class MaquinaSaque {
 		this.estado = criado;
 	}
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 
-		Saque saque = new Saque(true);
-		MaquinaSaque maquinaSaque = new MaquinaSaque(saque);
+	Saque saque = new Saque(true);
+	MaquinaSaque maquinaSaque = new MaquinaSaque(saque);
 
-		maquinaSaque.estado.enviarBanco();
-		maquinaSaque.estado.pagar();
-	}
+	// come cando o fluxo
+	maquinaSaque.estado.enviarBanco();
+
+	// banco retornando ...
+	maquinaSaque.estado.pagar();
+}
 }

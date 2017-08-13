@@ -6,7 +6,6 @@ package com.mageddo.v3;
 
 public class Saque {
 	public boolean perfilRisco;
-
 	public Saque(boolean perfilRisco) {
 		this.perfilRisco = perfilRisco;
 	}
